@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function CallToActionSection() {
   return (
-    <section className="relative bg-gradient-to-b from-blackDeep via-blackElevate to-blackDeep text-whiteSoft py-40 px-6 overflow-hidden">
+    <section className="relative bg-gradient-to-b from-blackDeep via-blackElevate to-blackDeep text-whiteSoft py-8 px-6 overflow-hidden">
     
       <motion.div
         className="absolute top-1/2 left-1/2 w-[900px] h-[900px] rounded-full bg-goldSoft/10 blur-[180px] -translate-x-1/2 -translate-y-1/2"

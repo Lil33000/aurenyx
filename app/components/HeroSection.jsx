@@ -84,16 +84,13 @@ export default function HeroSection() {
           repeat: Infinity,
         }}
       />
-      {/* Gradient de fond */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blackDeep/80 to-blackDeep z-0" />
-      
-      <div className="relative z-10 max-w-7xl mx-auto pt-36">
-        {/* Slogan d’accroche */}
-        <div className="flex justify-center items-center mb-10 space-y-1 font-[system-ui,serif]">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blackDeep/80 to-blackDeep z-0" />   
+      <div className="relative z-10 max-w-7xl mx-auto pt-36">   
+        <div className="flex justify-center items-center mb-8 space-y-1 font-[system-ui,serif]">
           {["Plus vite.", "Plus malin.", "Plus fort."].map((text, index) => (
             <motion.span
               key={text}
-              className="block text-[1.4rem] md:text-[1.8rem] italic font-light text-goldSoft/90"
+              className="block text-[1rem] md:text-[1.4rem] italic font-light text-goldSoft/90"
               style={{
                 fontFamily:
                   "'Playfair Display', 'Times New Roman', 'Georgia', serif",

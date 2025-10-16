@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-gradient-to-b from-blackDeep via-blackElevate to-blackDeep text-whiteSoft pt-24 pb-10 overflow-hidden border-t border-goldSoft/10">
+    <footer className="relative bg-gradient-to-b from-blackDeep via-blackElevate to-blackDeep text-whiteSoft pt-8 pb-10 overflow-hidden border-t border-goldSoft/10">
       {/* Fond animé */}
 
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blackDeep/80 to-blackDeep pointer-events-none" />
