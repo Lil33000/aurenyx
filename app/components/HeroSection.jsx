@@ -69,9 +69,8 @@ export default function HeroSection() {
 
   return (
     <section className="relative flex flex-col items-center justify-center text-center min-h-screen overflow-hidden bg-blackDeep px-6 font-[system-ui,sf-pro-text,segoe-ui]">
-      {/* --- Fond interactif --- */}
-      <GoldenParticles density={150} baseSpeed={0.3} mouseForce={190} />
-
+      
+      <GoldenParticles baseDensity={150} baseSpeed={0.3} mouseForce={190} />
       {/* Halo dynamique central */}
       <motion.div
         className="absolute top-1/2 left-1/2 w-[700px] h-[700px] rounded-full bg-goldSoft/15 blur-[150px] -translate-x-1/2 -translate-y-1/2"
@@ -85,11 +84,9 @@ export default function HeroSection() {
           repeat: Infinity,
         }}
       />
-
       {/* Gradient de fond */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blackDeep/80 to-blackDeep z-0" />
-
-      {/* --- Contenu principal --- */}
+      
       <div className="relative z-10 max-w-7xl mx-auto pt-36">
         {/* Slogan d’accroche */}
         <div className="flex justify-center items-center mb-10 space-y-1 font-[system-ui,serif]">
@@ -115,7 +112,6 @@ export default function HeroSection() {
           ))}
         </div>
 
-        {/* Titre principal */}
         <motion.h1
           className="text-[2.7rem] md:text-[4.5rem] font-[600] leading-tight mb-6 text-whiteSoft"
           initial={{ opacity: 0, y: 40 }}
@@ -182,8 +178,7 @@ export default function HeroSection() {
           </Link>
         </motion.div>
       </div>
-
-      {/* --- Stats avec animation différée --- */}
+     
       <motion.div
         ref={statsRef}
         initial={{ opacity: 0, y: 40 }}

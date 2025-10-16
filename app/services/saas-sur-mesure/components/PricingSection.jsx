@@ -8,7 +8,7 @@ export default function PricingSection() {
     {
       title: "SaaS Standard",
       subtitle: "L’essentiel pour démarrer",
-      price: "10 k€ – 20 k€",
+      price: "Sur devis",
       features: [
         "Architecture moderne et scalable",
         "Design UI/UX professionnel",
@@ -23,7 +23,7 @@ export default function PricingSection() {
     {
       title: "SaaS + IA",
       subtitle: "L’avantage compétitif",
-      price: "20 k€ – 30 k€",
+      price: "Sur devis",
       features: [
         "Tout du SaaS Standard",
         "Intégration IA personnalisée",
@@ -40,8 +40,6 @@ export default function PricingSection() {
   return (
     <section className="relative bg-whiteSoft text-blackDeep py-32 px-6 overflow-hidden">
       <AuroraBackground />
-
-      {/* --- Titre --- */}
       <motion.div
         className="relative z-10 text-center mb-20"
         initial={{ opacity: 0, y: 40 }}
@@ -66,8 +64,7 @@ export default function PricingSection() {
           un accompagnement stratégique.
         </p>
       </motion.div>
-
-      {/* --- Cartes --- */}
+      
       <div className="relative z-10 grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
         {plans.map((plan, i) => (
           <motion.div
@@ -159,8 +156,7 @@ export default function PricingSection() {
           </motion.div>
         ))}
       </div>
-
-      {/* --- Option stratégique --- */}
+     
       <motion.div
         className="relative z-10 max-w-6xl mx-auto mt-24 border border-goldSoft/10 bg-white rounded-3xl p-10 shadow-[0_0_50px_rgba(201,169,97,0.08)]"
         initial={{ opacity: 0, y: 40 }}

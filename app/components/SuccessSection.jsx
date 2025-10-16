@@ -33,7 +33,6 @@ export default function SuccessSection() {
     <section className="relative bg-blackDeep text-whiteSoft py-28 px-6 overflow-hidden">
       <GoldenParticles density={35} baseSpeed={0.3} mouseForce={100} />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blackDeep/80 to-blackDeep" />
-
       <motion.div
         className="relative z-10 max-w-6xl mx-auto text-center mb-16"
         initial={{ opacity: 0, y: 40 }}
@@ -45,12 +44,11 @@ export default function SuccessSection() {
           Déjà livré avec <span className="text-goldSoft">succès</span>
         </h2>
         <p className="text-grayMedium max-w-2xl mx-auto">
-          Nous créons, testons et livrons des produits qui ont un vrai impact.  
+          Nous créons, testons et livrons des produits qui ont un vrai impact.
           Voici un aperçu de projets déjà finalisés par nos équipes.
         </p>
       </motion.div>
-
-      {/* --- Liste des projets --- */}
+      
       <div className="relative z-10 grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
         {projects.map((p, i) => (
           <motion.a
@@ -97,8 +95,7 @@ export default function SuccessSection() {
           </motion.a>
         ))}
       </div>
-
-      {/* --- Call to action --- */}
+    
       <motion.div
         className="relative z-10 text-center mt-20"
         initial={{ opacity: 0, y: 30 }}

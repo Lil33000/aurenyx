@@ -7,11 +7,10 @@ import { Mail, Calendar, ArrowRight, MessageSquare } from "lucide-react";
 export default function Contact() {
   return (
     <main className="relative min-h-screen flex flex-col items-center justify-center px-6 bg-blackDeep overflow-hidden text-whiteSoft pt-36 md:pt-32">
-      {/* --- Fond animé doré --- */}
+     
       <GoldenParticles density={65} />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blackDeep/80 to-blackDeep" />
-
-      {/* --- Section principale --- */}
+     
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -30,13 +29,13 @@ export default function Contact() {
             />
           </span>
         </h1>
-
         <p className="text-grayMedium text-base md:text-lg max-w-xl mx-auto mb-12 leading-relaxed pt-2">
           Un appel stratégique de 15 minutes offert avec un de nos experts —{" "}
-          <span className="text-goldSoft">présentez-nous votre vision, on s’occupe du reste.</span>
+          <span className="text-goldSoft">
+            présentez-nous votre vision, on s’occupe du reste.
+          </span>
         </p>
-
-        {/* --- Formulaire --- */}
+       
         <motion.form
           className="bg-blackElevate/70 backdrop-blur-xl border border-goldSoft/10 rounded-3xl p-10 shadow-[0_0_40px_rgba(201,169,97,0.1)] space-y-6"
           initial={{ opacity: 0, scale: 0.9 }}
@@ -77,10 +76,8 @@ export default function Contact() {
             Envoyer
           </motion.button>
         </motion.form>
-
       </motion.div>
-
-      {/* --- Section "Pourquoi nous contacter ?" --- */}
+   
       <motion.section
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
